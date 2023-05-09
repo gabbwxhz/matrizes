@@ -1,0 +1,152 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(23, 21, 27);
+    background: radial-gradient(circle, rgba(23, 21, 27, 1) 13%, rgba(20, 18, 25, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 8px 70px;
+    color: #6200ff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.4s background 0.4s;
+    box-shadow: 0.4, color 0.4s;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #6200ff;
+    border-left: 2px solid #6200ff;
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #6200ff;
+    border-right: 2px solid #6200ff;
+    transition: width 0.4s, height 0.4s;
+    transition-delay: 0.4s;
+}
+
+button:hover::after,
+button:hover::before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+button:hover {
+    background-color: #6200ff;
+    color: aliceblue;
+    box-shadow: 0 0 20px #6200ff;
+    transition-delay: 0.4s;
+}
+
+table {
+    border: 1px solid aliceblue;
+    border-collapse: collapse;
+    color: aliceblue;
+}
+
+td {
+    padding: 20px;
+    border: 1px solid aliceblue;
+}
+
+h2 {
+    font-size: 55px;
+    margin-top: 40px;
+    color: aliceblue;
+    text-shadow: 1px 3px 15px rgba(255, 255, 255, 0.349);
+}
+
+p {
+    color: aliceblue;
+    max-width: 540px;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.home-body {
+    background: rgb(23, 21, 27);
+    background: radial-gradient(circle, rgba(23, 21, 27, 1) 13%, rgba(20, 18, 25, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-body h1 {
+    font-size: 80px;
+    color: aliceblue;
+    margin-bottom: 15px;
+    text-shadow: 1px 3px 15px rgba(255, 255, 255, 0.349);
+}
+
+.table-flex {
+    display: flex;
+    gap: 40px;
+    text-shadow: 1px 3px 15px rgba(255, 255, 255, 0.349);
+}
+
+.matriz-h2 {
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: aliceblue;
+    text-shadow: 1px 3px 15px rgba(255, 255, 255, 0.349);
+}
+
+.matriz-h3 {
+    font-size: 20px;
+    max-width: 500px;
+    text-align: center;
+    color: rgb(255, 39, 39);
+    text-shadow: 1px 3px 15px rgba(255, 0, 0, 0.349);
+}
+
+.spacing-top {
+    margin-top: 60px;
+}
+
+.spacing-bottom {
+    margin-bottom: 60px;
+}
+
+.purple {
+    color: #6200ff;
+}
+
+.purple-shadow {
+    text-shadow: 1px 3px 15px #6200ff81;
+}
